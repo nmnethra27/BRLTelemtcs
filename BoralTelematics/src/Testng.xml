@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parameterization Test Suite">
+
+<listeners>
+<listener class-name ="com.boral.qa.Utilities.ExtentReporterNG" />
+</listeners>
+
+	<test name="Testing Parameterization">
+		<classes>
+			<class name="com.boral.qa.testcases.HomeTestcases" />
+			<class name="com.boral.qa.testcases.LoginTestcases" />
+		</classes>
+	</test>
+</suite>
+
+
+
+
+
+
+
+
+

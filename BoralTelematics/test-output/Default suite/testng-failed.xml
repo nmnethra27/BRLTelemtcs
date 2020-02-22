@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.boral.qa.testcases.HomeTestcases">
+        <methods>
+          <include name="initialMethod"/>
+          <include name="closeBrowser"/>
+          <include name="searchTruck"/>
+        </methods>
+      </class> <!-- com.boral.qa.testcases.HomeTestcases -->
+      <class name="com.boral.qa.testcases.LoginTestcases">
+        <methods>
+          <include name="end"/>
+          <include name="LoginTest" invocation-numbers="1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.boral.qa.testcases.LoginTestcases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
