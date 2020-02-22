@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testing Parameterization</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/8</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 18 15:50:47 IST 2020</td>
+<td>Started on:</td><td>Sat Feb 22 15:42:57 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17312 ms)</td>
+<tr><td>Total time:</td><td>262 seconds (262418 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,133 +68,43 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.boral.qa.testcases.HomeTestcases.initialMethod()'><b>initialMethod</b><br>Test class: com.boral.qa.testcases.HomeTestcases</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 78
+<td title='com.boral.qa.testcases.HomeTestcases.searchTruck()'><b>searchTruck</b><br>Test class: com.boral.qa.testcases.HomeTestcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[contains(text(),2030)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;INPUSCLP05488&apos;, ip: &apos;10.53.136.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x013EA923+1550627]
-	Ordinal0 [0x0136A731+1025841]
-	Ordinal0 [0x012EC715+509717]
-	Ordinal0 [0x0127FC68+64616]
-	Ordinal0 [0x0127C594+50580]
-	Ordinal0 [0x0129ACE7+175335]
-	Ordinal0 [0x0129A8ED+174317]
-	Ordinal0 [0x01298CDB+167131]
-	Ordinal0 [0x0128144A+70730]
-	Ordinal0 [0x012824D0+74960]
-	Ordinal0 [0x01282469+74857]
-	Ordinal0 [0x013842F7+1131255]
-	GetHandleVerifier [0x0148711D+523789]
-	GetHandleVerifier [0x01486EB0+523168]
-	GetHandleVerifier [0x0148E207+552695]
-	GetHandleVerifier [0x0148791A+525834]
-	Ordinal0 [0x0137B82C+1095724]
-	Ordinal0 [0x0138636B+1139563]
-	Ordinal0 [0x013864D3+1139923]
-	Ordinal0 [0x01385455+1135701]
-	BaseThreadInitThunk [0x76F00419+25]
-	RtlGetAppContainerNamedObjectPath [0x77CD662D+237]
-	RtlGetAppContainerNamedObjectPath [0x77CD65FD+189]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.boral.qa.base.TestBase.initialization(TestBase.java:35)
-	at com.boral.qa.testcases.HomeTestcases.initialMethod(HomeTestcases.java:31)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace314562573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace314562573'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 78
+System info: host: &apos;JITHU&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.boral.qa.pages.HomePage.searchTruck(HomePage.java:60)
+	at com.boral.qa.testcases.HomeTestcases.searchTruck(HomeTestcases.java:57)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810518740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810518740'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[contains(text(),2030)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;INPUSCLP05488&apos;, ip: &apos;10.53.136.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x013EA923+1550627]
-	Ordinal0 [0x0136A731+1025841]
-	Ordinal0 [0x012EC715+509717]
-	Ordinal0 [0x0127FC68+64616]
-	Ordinal0 [0x0127C594+50580]
-	Ordinal0 [0x0129ACE7+175335]
-	Ordinal0 [0x0129A8ED+174317]
-	Ordinal0 [0x01298CDB+167131]
-	Ordinal0 [0x0128144A+70730]
-	Ordinal0 [0x012824D0+74960]
-	Ordinal0 [0x01282469+74857]
-	Ordinal0 [0x013842F7+1131255]
-	GetHandleVerifier [0x0148711D+523789]
-	GetHandleVerifier [0x01486EB0+523168]
-	GetHandleVerifier [0x0148E207+552695]
-	GetHandleVerifier [0x0148791A+525834]
-	Ordinal0 [0x0137B82C+1095724]
-	Ordinal0 [0x0138636B+1139563]
-	Ordinal0 [0x013864D3+1139923]
-	Ordinal0 [0x01385455+1135701]
-	BaseThreadInitThunk [0x76F00419+25]
-	RtlGetAppContainerNamedObjectPath [0x77CD662D+237]
-	RtlGetAppContainerNamedObjectPath [0x77CD65FD+189]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.boral.qa.base.TestBase.initialization(TestBase.java:35)
-	at com.boral.qa.testcases.HomeTestcases.initialMethod(HomeTestcases.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+System info: host: &apos;JITHU&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.boral.qa.pages.HomePage.searchTruck(HomePage.java:60)
+	at com.boral.qa.testcases.HomeTestcases.searchTruck(HomeTestcases.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -210,235 +120,15 @@ remote stacktrace: Backtrace:
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.boral.qa.testcases.HomeTestcases@5b94b04d</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 78
-Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;INPUSCLP05488&apos;, ip: &apos;10.53.136.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x013EA923+1550627]
-	Ordinal0 [0x0136A731+1025841]
-	Ordinal0 [0x012EC715+509717]
-	Ordinal0 [0x0127FC68+64616]
-	Ordinal0 [0x0127C594+50580]
-	Ordinal0 [0x0129ACE7+175335]
-	Ordinal0 [0x0129A8ED+174317]
-	Ordinal0 [0x01298CDB+167131]
-	Ordinal0 [0x0128144A+70730]
-	Ordinal0 [0x012824D0+74960]
-	Ordinal0 [0x01282469+74857]
-	Ordinal0 [0x013842F7+1131255]
-	GetHandleVerifier [0x0148711D+523789]
-	GetHandleVerifier [0x01486EB0+523168]
-	GetHandleVerifier [0x0148E207+552695]
-	GetHandleVerifier [0x0148791A+525834]
-	Ordinal0 [0x0137B82C+1095724]
-	Ordinal0 [0x0138636B+1139563]
-	Ordinal0 [0x013864D3+1139923]
-	Ordinal0 [0x01385455+1135701]
-	BaseThreadInitThunk [0x76F00419+25]
-	RtlGetAppContainerNamedObjectPath [0x77CD662D+237]
-	RtlGetAppContainerNamedObjectPath [0x77CD65FD+189]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.boral.qa.base.TestBase.initialization(TestBase.java:35)
-	at com.boral.qa.testcases.LoginTestcases.setup(LoginTestcases.java:36)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959451969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1959451969'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 78
-Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;INPUSCLP05488&apos;, ip: &apos;10.53.136.37&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x013EA923+1550627]
-	Ordinal0 [0x0136A731+1025841]
-	Ordinal0 [0x012EC715+509717]
-	Ordinal0 [0x0127FC68+64616]
-	Ordinal0 [0x0127C594+50580]
-	Ordinal0 [0x0129ACE7+175335]
-	Ordinal0 [0x0129A8ED+174317]
-	Ordinal0 [0x01298CDB+167131]
-	Ordinal0 [0x0128144A+70730]
-	Ordinal0 [0x012824D0+74960]
-	Ordinal0 [0x01282469+74857]
-	Ordinal0 [0x013842F7+1131255]
-	GetHandleVerifier [0x0148711D+523789]
-	GetHandleVerifier [0x01486EB0+523168]
-	GetHandleVerifier [0x0148E207+552695]
-	GetHandleVerifier [0x0148791A+525834]
-	Ordinal0 [0x0137B82C+1095724]
-	Ordinal0 [0x0138636B+1139563]
-	Ordinal0 [0x013864D3+1139923]
-	Ordinal0 [0x01385455+1135701]
-	BaseThreadInitThunk [0x76F00419+25]
-	RtlGetAppContainerNamedObjectPath [0x77CD662D+237]
-	RtlGetAppContainerNamedObjectPath [0x77CD65FD+189]
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.boral.qa.base.TestBase.initialization(TestBase.java:35)
-	at com.boral.qa.testcases.LoginTestcases.setup(LoginTestcases.java:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>73</td>
+<td>com.boral.qa.testcases.HomeTestcases@4c70fda8</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.setup()'><b>setup</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.HomeTestcases.closeBrowser()'><b>closeBrowser</b><br>Test class: com.boral.qa.testcases.HomeTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.HomeTestcases@5b94b04d</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.LoginTestcases.end()'><b>end</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -448,42 +138,37 @@ remote stacktrace: Backtrace:
 <td title='com.boral.qa.testcases.LoginTestcases.BlankCredTest()'><b>BlankCredTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
 <td></td>
 <td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.BlankPasswordTest()'><b>BlankPasswordTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
 <td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>1</td>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.BlankUsernameTest()'><b>BlankUsernameTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
 <td></td>
 <td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.LoginTest()'><b>LoginTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases<br>Parameters: ashwini.nayak@boral.com.au, Passw0rd!</td>
 <td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>11</td>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.LoginTest()'><b>LoginTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases<br>Parameters: chauhan.ashutosh@boral.com.au, Ashu@1980</td>
 <td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>10</td>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.WrongPasswordTest()'><b>WrongPasswordTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
 <td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
+<td>2</td>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 <tr>
 <td title='com.boral.qa.testcases.LoginTestcases.WrongUsernameTest()'><b>WrongUsernameTest</b><br>Test class: com.boral.qa.testcases.LoginTestcases</td>
 <td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.LoginTestcases@7d8704ef</td></tr>
-<tr>
-<td title='com.boral.qa.testcases.HomeTestcases.searchTruck()'><b>searchTruck</b><br>Test class: com.boral.qa.testcases.HomeTestcases</td>
-<td></td>
-<td>0</td>
-<td>com.boral.qa.testcases.HomeTestcases@5b94b04d</td></tr>
+<td>1</td>
+<td>com.boral.qa.testcases.LoginTestcases@3532ec19</td></tr>
 </table><p>
 </body>
 </html>

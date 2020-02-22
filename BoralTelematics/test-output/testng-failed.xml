@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Parameterization Test Suite]">
+  <listeners>
+    <listener class-name="com.boral.qa.Utilities.ExtentReporterNG"/>
+  </listeners>
+  <test name="Testing Parameterization(failed)">
     <classes>
       <class name="com.boral.qa.testcases.HomeTestcases">
         <methods>
@@ -13,10 +16,9 @@
       <class name="com.boral.qa.testcases.LoginTestcases">
         <methods>
           <include name="end"/>
-          <include name="LoginTest" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.boral.qa.testcases.LoginTestcases -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testing Parameterization(failed) -->
+</suite> <!-- Failed suite [Parameterization Test Suite] -->

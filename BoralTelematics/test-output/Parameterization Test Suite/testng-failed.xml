@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Parameterization Test Suite]">
+  <listeners>
+    <listener class-name="com.boral.qa.Utilities.ExtentReporterNG"/>
+  </listeners>
   <test name="Testing Parameterization(failed)">
     <classes>
-      <class name="com.boral.qa.testcases.LoginTestcases">
-        <methods>
-          <include name="BlankUsernameTest"/>
-          <include name="WrongPasswordTest"/>
-          <include name="BlankCredTest"/>
-          <include name="WrongUsernameTest"/>
-          <include name="BlankPasswordTest"/>
-          <include name="LoginTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.boral.qa.testcases.LoginTestcases -->
       <class name="com.boral.qa.testcases.HomeTestcases">
         <methods>
           <include name="initialMethod"/>
+          <include name="closeBrowser"/>
           <include name="searchTruck"/>
         </methods>
       </class> <!-- com.boral.qa.testcases.HomeTestcases -->
+      <class name="com.boral.qa.testcases.LoginTestcases">
+        <methods>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.boral.qa.testcases.LoginTestcases -->
     </classes>
   </test> <!-- Testing Parameterization(failed) -->
 </suite> <!-- Failed suite [Parameterization Test Suite] -->
